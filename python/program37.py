@@ -1,0 +1,13 @@
+import re
+txt = input("Enter a text: ")
+print("Text inputted is: ",txt)
+new_txt = re.sub(r'\d',"*",txt)
+print("Formatted Text is: ",new_txt)
+numb = re.findall(r'\d+',txt)
+print("Numbers are: ",numb)
+startw = re.findall(r'\b[ae]\w+',txt)
+print("Words starting with a and e are: ",startw)
+sp = re.sub(r'\s',":",txt)
+print("After replacing space: ",sp)
+words = re.findall(r'\b\w{5}\b',txt)
+print(words)

@@ -1,0 +1,5 @@
+names = list(input("Enter names: ").split())
+print("List is: ",names)
+print("Reversed list is: ",names[::-1])
+l = max(names,key=len)
+print("Longest name is: ",l)
